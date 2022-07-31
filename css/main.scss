@@ -1,0 +1,232 @@
+@import "variabale";
+body {
+    font-family: "Merriweather Sans", Arial, Helvetica, sans-serif;
+    // height: 10000px;
+}
+
+.main-btn {
+    background-color: $redc;
+    color: $yelloc;
+    padding: 0.5rem 1rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// start navbar
+.navbar {
+    background-color: $darkcolor;
+    .navbar-toggler {
+        color: white;
+    }
+    .navbar-nav {
+        .nav-link {
+            color: white;
+            &:focus {
+                color: $green;
+            }
+            &:hover {
+                color: $green;
+            }
+        }
+    }
+    .search {
+        border-left: 1px solid $green;
+        color: $green;
+        svg {
+            color: $green;
+        }
+    }
+}
+
+.container {
+    img {
+        width: 70px;
+        height: 40px;
+    }
+}
+
+// end navbar
+// start landing
+.landing {
+    background-color: $darkcolor;
+    min-height: calc(100vh - 72px);
+}
+
+// start features////////
+.features,
+.stuff {
+    .contaner {
+        .main-title {
+             ::after {
+                content: "";
+                width: 120px;
+                height: 2px;
+                background-color: $green;
+                position: absolute;
+                bottom: -20px;
+                left: 50%;
+                transform: translate(-50%);
+            }
+            .ramses {
+                width: 300px;
+                height: 200px;
+            }
+        }
+    }
+    .icon-holder {
+        height: 200px;
+        .svg {
+            left: 50%;
+            transform: translate(-50%);
+        }
+        .number {
+            font-size: 12rem;
+            color: $scolor;
+        }
+        .icon {
+            color: $green;
+        }
+    }
+    .fead {
+        h4 {
+            color: $yelloc;
+        }
+    }
+}
+
+// <!-- our work section -->
+.our-work {
+    background-color: $scolor;
+    ul {
+        .active {
+            color: $yelloc;
+            background-color: $redc;
+            // border-radius: 55px;
+        }
+        li {
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            &:not(.active):hover {
+                color: $redc;
+            }
+        }
+    }
+    .box {
+        padding: 5px;
+        overflow: hidden;
+        position: relative;
+        &::before {
+            content: attr(data-work);
+            position: absolute;
+            // background-color: $redc;
+            background-color: rgb(56 197 192 / 33%);
+            width: calc(100% - 10px);
+            height: calc(100% - 10px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            color: white;
+            transition: 0.3s;
+            font-size: 1.5rem;
+            transform: translateX(calc(-100% - 5px));
+            // transform: translateX(calc(-100% - 5px));
+        }
+        &:hover {
+            &::before {
+                transform: translateX(0);
+            }
+        }
+    }
+}
+
+// stufffffffffff
+.stuff {
+    .contaner {
+        .description {
+            max-width: 500px;
+        }
+    }
+}
+
+// <!-- our work section -->
+.team {
+    .contaner {
+        background-color: $scolor;
+        h2 {
+            color: $yelloc;
+        }
+        .box {
+            h4 {
+                background-color: $green;
+            }
+        }
+    }
+}
+
+// start subscribe page
+.subscribe {
+    background-color: $yelloc;
+    // .contaner {}
+    input[type="text"] {
+        border: none;
+        border-bottom: 1px solid white;
+         :focus {
+            outline: none;
+        }
+    }
+    input[type="submit"] {
+        background-color: $darkcolor;
+        color: $yelloc;
+    }
+     ::placeholder {
+        color: white;
+    }
+}
+
+// start subscribe page
+.footer {
+    .contact {
+        ul {
+            >svg {
+                width: 50px;
+                height: 50px;
+            }
+        }
+    }
+    background-color: $darkcolor;
+    .contaner {
+        .row {
+            img {
+                width: 150px;
+                height: 70px;
+            }
+            .copyright {
+                >span {
+                    color: $green;
+                }
+                div {
+                    span {
+                        color: $yelloc;
+                    }
+                }
+            }
+        }
+    }
+    .facebook {
+        background-color: #1877f2;
+    }
+    .whatsapp {
+        background-color: #075e54;
+    }
+    .twitter {
+        background-color: #34b7f1;
+    }
+    .linkedin {
+        background-color: #0077b5;
+    }
+}

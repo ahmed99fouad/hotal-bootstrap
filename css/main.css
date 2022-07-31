@@ -1,0 +1,211 @@
+body {
+  font-family: "Merriweather Sans", Arial, Helvetica, sans-serif;
+}
+
+.main-btn {
+  background-color: #ff1350;
+  color: #ffc400;
+  padding: 0.5rem 1rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.navbar {
+  background-color: #192b3f;
+}
+.navbar .navbar-toggler {
+  color: white;
+}
+.navbar .navbar-nav .nav-link {
+  color: white;
+}
+.navbar .navbar-nav .nav-link:focus {
+  color: #33d1cc;
+}
+.navbar .navbar-nav .nav-link:hover {
+  color: #33d1cc;
+}
+.navbar .search {
+  border-left: 1px solid #33d1cc;
+  color: #33d1cc;
+}
+.navbar .search svg {
+  color: #33d1cc;
+}
+
+.container img {
+  width: 70px;
+  height: 40px;
+}
+
+.landing {
+  background-color: #192b3f;
+  min-height: calc(100vh - 72px);
+}
+
+.features .contaner .main-title ::after,
+.stuff .contaner .main-title ::after {
+  content: "";
+  width: 120px;
+  height: 2px;
+  background-color: #33d1cc;
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+.features .contaner .main-title .ramses,
+.stuff .contaner .main-title .ramses {
+  width: 300px;
+  height: 200px;
+}
+.features .icon-holder,
+.stuff .icon-holder {
+  height: 200px;
+}
+.features .icon-holder .svg,
+.stuff .icon-holder .svg {
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+.features .icon-holder .number,
+.stuff .icon-holder .number {
+  font-size: 12rem;
+  color: #eff7fa;
+}
+.features .icon-holder .icon,
+.stuff .icon-holder .icon {
+  color: #33d1cc;
+}
+.features .fead h4,
+.stuff .fead h4 {
+  color: #ffc400;
+}
+
+.our-work {
+  background-color: #eff7fa;
+}
+.our-work ul .active {
+  color: #ffc400;
+  background-color: #ff1350;
+}
+.our-work ul li {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+.our-work ul li:not(.active):hover {
+  color: #ff1350;
+}
+.our-work .box {
+  padding: 5px;
+  overflow: hidden;
+  position: relative;
+}
+.our-work .box::before {
+  content: attr(data-work);
+  position: absolute;
+  background-color: rgba(56, 197, 192, 0.33);
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: bold;
+  color: white;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-size: 1.5rem;
+  -webkit-transform: translateX(calc(-100% - 5px));
+          transform: translateX(calc(-100% - 5px));
+}
+.our-work .box:hover::before {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.stuff .contaner .description {
+  max-width: 500px;
+}
+
+.team .contaner {
+  background-color: #eff7fa;
+}
+.team .contaner h2 {
+  color: #ffc400;
+}
+.team .contaner .box h4 {
+  background-color: #33d1cc;
+}
+
+.subscribe {
+  background-color: #ffc400;
+}
+.subscribe input[type=text] {
+  border: none;
+  border-bottom: 1px solid white;
+}
+.subscribe input[type=text] :focus {
+  outline: none;
+}
+.subscribe input[type=submit] {
+  background-color: #192b3f;
+  color: #ffc400;
+}
+.subscribe ::-webkit-input-placeholder {
+  color: white;
+}
+.subscribe ::-moz-placeholder {
+  color: white;
+}
+.subscribe :-ms-input-placeholder {
+  color: white;
+}
+.subscribe ::-ms-input-placeholder {
+  color: white;
+}
+.subscribe ::placeholder {
+  color: white;
+}
+
+.footer {
+  background-color: #192b3f;
+}
+.footer .contact ul > svg {
+  width: 50px;
+  height: 50px;
+}
+.footer .contaner .row img {
+  width: 150px;
+  height: 70px;
+}
+.footer .contaner .row .copyright > span {
+  color: #33d1cc;
+}
+.footer .contaner .row .copyright div span {
+  color: #ffc400;
+}
+.footer .facebook {
+  background-color: #1877f2;
+}
+.footer .whatsapp {
+  background-color: #075e54;
+}
+.footer .twitter {
+  background-color: #34b7f1;
+}
+.footer .linkedin {
+  background-color: #0077b5;
+}
